@@ -11,9 +11,9 @@ public class DivideTwoIntegersTest {
 
     @Test
     public void divideNumberWithOutDivisorModOperatorTest(){
-        int input = 10;
+        int input = 7;
         int divisor = -3;
-        assertEquals(3, DivideTwoIntegers.divideTwoIntegers(input,divisor));
+        assertEquals(-2, DivideTwoIntegers.divideTwoIntegers(input,divisor));
     }
 
 }
