@@ -1,4 +1,4 @@
-package LeetCode;
+package leetCode;
 public class RepeatlyAddDigit {
 
     public static int addDigit(String digits){

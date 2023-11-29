@@ -1,4 +1,4 @@
-package LeetCode;
+package leetCode;
 
 import java.util.Arrays;
     public class RotateImage {
@@ -7,7 +7,11 @@ import java.util.Arrays;
             int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
             for (int outter = 0; outter < array.length; outter++) {
                 for (int inner = 0; inner < array[outter].length; inner++) {
-                    array[outter] = new int[]{array[outter][inner]};
+                    if (array[outter][inner] == outter){
+                        int temp = array[outter][inner];
+                        array[inner] = new int[]{array[outter][inner]};
+                        array[outter][inner] = temp;
+                    }
                 }
                 System.out.println(Arrays.deepToString(array));
             }

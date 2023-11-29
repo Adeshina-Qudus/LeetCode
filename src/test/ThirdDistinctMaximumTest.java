@@ -1,6 +1,6 @@
-package Test;
+package test;
 
-import LeetCode.ThirdDistinctMaximum;
+import leetCode.ThirdDistinctMaximum;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

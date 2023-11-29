@@ -1,6 +1,6 @@
-package Test;
+package test;
 
-import LeetCode.IndexOfTheFirstOccurrenceInAString;
+import leetCode.IndexOfTheFirstOccurrenceInAString;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

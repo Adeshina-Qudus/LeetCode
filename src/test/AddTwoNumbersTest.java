@@ -1,6 +1,6 @@
-package Test;
+package test;
 
-import LeetCode.AddTwoNumbers;
+import leetCode.AddTwoNumbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -24,9 +24,9 @@ class AddTwoNumbersTest {
     }
     @Test
     public void testThatArrayCanBeSumUpAndReversed(){
-        int[] array = {2,4,3};
-        int[] secondArray = {5,6,4};
-        assertArrayEquals(new int[]{7,0,8}, AddTwoNumbers.addTwoNumbers(array,secondArray));;
+        int[] array = {9,9,9,9,9,9,9};
+        int[] secondArray = {9,9,9,9};
+        assertArrayEquals(new int[]{8,9,9,9,0,0,0,1}, AddTwoNumbers.addTwoNumbers(array,secondArray));;
     }
 
 

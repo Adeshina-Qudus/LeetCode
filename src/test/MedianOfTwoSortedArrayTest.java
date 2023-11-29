@@ -1,6 +1,6 @@
-package Test;
+package test;
 
-import LeetCode.MedianOfTwoSortedArray;
+import leetCode.MedianOfTwoSortedArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
