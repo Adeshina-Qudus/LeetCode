@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.DivideTwoIntegers;
 import org.junit.jupiter.api.Test;
 

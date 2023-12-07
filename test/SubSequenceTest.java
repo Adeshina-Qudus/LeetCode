@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.SubSequence;
 import org.junit.jupiter.api.Test;
 

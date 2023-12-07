@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.RemoveElementAndReturnNumberOfElementRemaining;
 import org.junit.jupiter.api.Test;
 

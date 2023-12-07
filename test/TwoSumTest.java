@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.TwoSum;
 import org.junit.jupiter.api.Test;
 

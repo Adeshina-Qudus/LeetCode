@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.PlusOneToLastDigitOfArray;
 import org.junit.jupiter.api.Test;
 

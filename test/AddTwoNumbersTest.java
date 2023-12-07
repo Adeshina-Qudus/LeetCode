@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.AddTwoNumbers;
 import org.junit.jupiter.api.Test;
 

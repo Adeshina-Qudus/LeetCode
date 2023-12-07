@@ -1,5 +1,3 @@
-package test;
-
 import leetCode.IndexOfTheFirstOccurrenceInAString;
 import org.junit.jupiter.api.Test;
 
