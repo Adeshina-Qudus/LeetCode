@@ -1,36 +1,46 @@
 package leetCode;
 
-import java.util.Arrays;
-    public class RotateImage {
+public class RotateImage {
         public static void main(String[] args) {
+            rotateImage(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-            for (int outter = 0; outter < array.length; outter++) {
-                for (int inner = 0; inner < array[outter].length; inner++) {
-                    if (array[outter][inner] == outter){
-                        int temp = array[outter][inner];
-                        array[inner] = new int[]{array[outter][inner]};
-                        array[outter][inner] = temp;
-                    }
-                }
-                System.out.println(Arrays.deepToString(array));
-            }
         }
 
-        public static void rotateImage(int [][] array) {
-            array = new int[3][3];
-            int count = 0;
-            for (int outter = 0 ; outter < array.length;outter++){
+        public static void rotateImage(int [][] matrix) {
+            for (int outter = 0 ; outter < matrix.length;outter++){
+                for (int inner = outter + 1; inner < matrix.length ;inner++){
+                    int temp = matrix[outter][inner];
+                    matrix[outter][inner] = matrix[inner][outter];
+                    matrix[inner][outter] = temp;
+                }
+            }
+            printImage(reverseImage(matrix));
+
+        }
+
+        private static int[][] reverseImage(int[][] matrix) {
+            for (int reverse = 0; reverse < matrix.length; reverse++){
+                int left = 0 , right = matrix.length - 1;
+                while (left < right){
+                    int temp = matrix[reverse][left];
+                    matrix[reverse][left] = matrix[reverse][right];
+                    matrix[reverse][right] = temp;
+                    left++;
+                    right--;
+                }
+            }
+            return matrix;
+        }
+
+        public static void printImage(int[][] matrix) {
+            for (int[] row : matrix) {
+                for (int column : row) {
+                    System.out.print(column + " ");
+                }
                 System.out.println();
-                for (int inner = 0; inner < array[outter].length;inner++){
-                    count++;
-                    System.out.print(array[outter][inner] = count);
-                    System.out.print(" \t ");
-                    array[outter][outter] = array[inner][outter];
-                }
             }
-
         }
+
 
     }
 
