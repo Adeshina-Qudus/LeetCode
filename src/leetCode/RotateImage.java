@@ -3,10 +3,6 @@ package leetCode;
 import java.util.Arrays;
 
 public class RotateImage {
-        public static void main(String[] args) {
-            rotateImage(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
-
-        }
 
         public static void rotateImage(int [][] matrix) {
             for (int outter = 0 ; outter < matrix.length;outter++){
