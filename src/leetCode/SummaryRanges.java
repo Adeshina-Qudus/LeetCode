@@ -12,5 +12,6 @@ public class SummaryRanges {
                 
             }
         }
+        return result.toArray(new String[0]);
     }
 }
