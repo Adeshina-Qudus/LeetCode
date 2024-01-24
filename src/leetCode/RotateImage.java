@@ -13,9 +13,7 @@ public class RotateImage {
                 }
             }
             System.out.println(Arrays.deepToString(reverseImage(matrix)));
-
         }
-
         private static int[][] reverseImage(int[][] matrix) {
             for (int reverse = 0; reverse < matrix.length; reverse++){
                 int left = 0 , right = matrix.length - 1;
@@ -29,7 +27,6 @@ public class RotateImage {
             }
             return matrix;
         }
-
         public static void printImage(int[][] matrix) {
             for (int[] row : matrix) {
                 for (int column : row) {
@@ -38,7 +35,5 @@ public class RotateImage {
                 System.out.println();
             }
         }
-
-
     }
 
