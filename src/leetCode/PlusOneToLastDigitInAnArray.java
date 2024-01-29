@@ -4,8 +4,8 @@ public class PlusOneToLastDigitInAnArray {
 
     public static int[] plusOneToLastElement(int[] inputArray) {
         StringBuilder result = new StringBuilder();
-        for (int i : inputArray) {
-            result.append(i);
+        for (int count : inputArray) {
+            result.append(count);
         }
         result = new StringBuilder(String.valueOf(Integer.parseInt(String.valueOf(result)) + 1));
         return toArray(String.valueOf(result));
