@@ -13,6 +13,11 @@ class AnagramTest {
         String input = "anagram";
         String rearrangingInput = "nagaram";
         assertTrue(Anagram.anagram(input,rearrangingInput));
-
+    }
+    @Test
+    public void anagramSecondTest(){
+        String input = "rat";
+        String rearrangingInput = "car";
+        assertFalse(Anagram.anagram(input,rearrangingInput));
     }
 }
