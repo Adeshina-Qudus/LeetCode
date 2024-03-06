@@ -13,7 +13,7 @@ public class LetterCombinationOfaPhoneNumber {
                 for (int getIndex = 0 ; getIndex < telephoneValue.length; getIndex++){
                     for (int getElement = 0 ; getElement < telephoneValue[getIndex].length(); getElement++){
                         if (getIndex == Integer.parseInt(input) - 1){
-                            result.add(telephoneValue[getIndex].);
+                            result.add(telephoneValue[getIndex]);
                         }
                     }
                 }
