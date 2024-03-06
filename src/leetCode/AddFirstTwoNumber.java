@@ -10,7 +10,8 @@ public class AddFirstTwoNumber {
         int total = 0;
         int counter = 1;
         for (int count = 0; count < inputArray.length; count++){
-            total += inputArray[count];            if (counter % 2 == 0){
+            total += inputArray[count];
+            if (counter % 2 == 0){
                 resultList.add(total);
                 total = 0;
             }

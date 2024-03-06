@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class RotateImage {
 
+    public static void main(String[] args) {
+        int [][] matrix = {{5,9,1},{3,8,2},{1,2,3}};
+        rotateImage(matrix);
+    }
         public static void rotateImage(int [][] matrix) {
             for (int outter = 0 ; outter < matrix.length;outter++){
                 for (int inner = outter + 1; inner < matrix.length ;inner++){
