@@ -3,6 +3,8 @@ package Test;
 import leetCode.LetterCombinationOfaPhoneNumber;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LetterCombinationOfaPhoneNumberTest {
@@ -16,9 +18,9 @@ class LetterCombinationOfaPhoneNumberTest {
 //    }
 @Test
 public void testLetterCombinationOfaPhoneNumber(){
-    String input = "3";
+    String input = "2";
     String [] output = {"a","b","c"};
-    assertEquals(output, LetterCombinationOfaPhoneNumber.combinationOfAPhoneNumber(input).toArray());
+    assertArrayEquals(output, LetterCombinationOfaPhoneNumber.combinationOfAPhoneNumber(input).toArray());
 }
 
 }
