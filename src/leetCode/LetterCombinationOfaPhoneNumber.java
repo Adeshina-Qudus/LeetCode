@@ -20,11 +20,14 @@ public class LetterCombinationOfaPhoneNumber {
                 }
             }
         }
+        if (input.length() > 2){
+            for (int getIndex = 0 ; getIndex < telephoneValue.length ; getIndex++){
+                for (int getElement = 1 ; getElement < telephoneValue[getIndex + 1].length(); getElement++){
+
+                }
+            }
+        }
         return result;
     }
-    public static void main(String[] args) {
 
-        String [] telephoneValue = {"","abc","dcf","ghi","jkl","mno","pqrs","tuv","wxyz"};
-
-    }
 }
