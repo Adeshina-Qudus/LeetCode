@@ -12,4 +12,10 @@ public class SingleNumberTest {
         int output = 4;
         assertEquals(output,SingleNumber.singleNumber(number));
     }
+    @Test
+    public void secondSingleNumberTest(){
+        int [] number = {2,2,1};
+        int output = 1;
+        assertEquals(output,SingleNumber.singleNumber(number));
+    }
 }
