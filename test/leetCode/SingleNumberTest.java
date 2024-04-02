@@ -18,4 +18,12 @@ public class SingleNumberTest {
         int output = 1;
         assertEquals(output,SingleNumber.singleNumber(number));
     }
+
+    @Test
+    public void thirdSingleNumberTest(){
+        int [] number = {1};
+        int output = 1;
+        assertEquals(output,SingleNumber.singleNumber(number));
+    }
+
 }
