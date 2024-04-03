@@ -5,11 +5,7 @@ public class SingleNumber {
         int result = 0;
         int counterOfSingleNumber = 0;
         for (int eachElement : number) {
-            for (int allElement : number) {
-                if (eachElement == allElement) {
-                    counterOfSingleNumber++;
-                }
-            }
+            counterOfSingleNumber = allElement(eachElement,number,counterOfSingleNumber);
             if (counterOfSingleNumber == 1) {
                 result = eachElement;
             }
@@ -17,4 +13,15 @@ public class SingleNumber {
         }
         return result;
     }
+
+    private static int allElement(int eachElement, int[] number, int counterOfSingleNumber) {
+        for (int element : number){
+            if(element == eachElement){
+                counterOfSingleNumber++;
+            }
+        }
+        return counterOfSingleNumber;
+    }
+
+
 }
