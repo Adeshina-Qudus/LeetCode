@@ -14,13 +14,11 @@ public class TwoSum {
 
     public static int [] twoSum(int [] array , int target){
         int [] arrayResult = new int[2];
-        int count = 0;
         for (int outter = 0 ; outter < array.length ; outter++){
             for (int inner = outter +1 ; inner < array.length ; inner++) {
                 if (array[outter] + array[inner] == target){
-                    arrayResult[count] = outter;
-                    count++;
-                    arrayResult[count] = inner;
+                    arrayResult[0] = outter;
+                    arrayResult[1] = inner;
                 }
             }
 
