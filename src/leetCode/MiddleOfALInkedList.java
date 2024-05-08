@@ -1,5 +1,7 @@
 package leetCode;
 
+import java.util.Scanner;
+
 public class MiddleOfALInkedList {
     public static int[] middleOfALinkedTest(int[] input) {
         int [] result;
@@ -13,7 +15,6 @@ public class MiddleOfALInkedList {
         }
         return gettingElement(result,counter,input);
     }
-
     private static int[] gettingElement(int[] result, int counter,int [] input) {
         int inputCounter = counter;
         for (int count = 0; count < result.length; count++){
@@ -22,5 +23,4 @@ public class MiddleOfALInkedList {
         }
         return result;
     }
-
 }
