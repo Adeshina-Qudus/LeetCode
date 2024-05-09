@@ -14,4 +14,11 @@ public class MedianOfTwoSortedArrayDoubleTest {
         double output = 2.00;
         assertEquals(output,MedianOfTwoSortedArrayDouble.medianOfTwoSortedArrayDouble(firstArray,secondArray));
     }
+    @Test
+    public void secondTest(){
+        int [] firstArray = {1,2};
+        int [] secondArray = {3,4};
+        double output = 2.50;
+        assertEquals(output,MedianOfTwoSortedArrayDouble.medianOfTwoSortedArrayDouble(firstArray,secondArray));
+    }
 }
