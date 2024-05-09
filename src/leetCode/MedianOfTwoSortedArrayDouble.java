@@ -5,7 +5,6 @@ public class MedianOfTwoSortedArrayDouble {
         double result = 0.00;
         int [] merge = merged(firstArray, secondArray);
         sortMerged(merge);
-        System.out.println(merge.length);
         if (merge.length % 2 != 0){
             result = merge[merge.length / 2];
         }else {
