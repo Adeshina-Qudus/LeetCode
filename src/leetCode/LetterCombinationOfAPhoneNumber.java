@@ -11,24 +11,33 @@ public class LetterCombinationOfAPhoneNumber {
         if (input.isEmpty()){
             return result;
         }
-        String takingNumbers;
         int firstNumber = Integer.parseInt(String.valueOf(input.charAt(0)));
-        int secondNumber = 0;
         if (input.length() > 1){
-            secondNumber = Integer.parseInt(String.valueOf(input.charAt(1)));
-            for (int count = 0 ; count < phoneNumbers[firstNumber].length(); count++){
-                for (int counter = 0; counter < phoneNumbers[secondNumber].length() ; counter++){
-                    takingNumbers = String.valueOf(phoneNumbers[firstNumber].charAt(count) ).
-                            concat(String.valueOf(phoneNumbers[secondNumber].charAt(counter)));
-                    result.add(takingNumbers);
-                }
-            }
+            gettingElementTwo(input, phoneNumbers, firstNumber, result);
         }else {
-            for (int count = 0 ; count < phoneNumbers[firstNumber].length(); count++){
-                takingNumbers = String.valueOf(phoneNumbers[firstNumber].charAt(count));
+            gettingElementOne(result, phoneNumbers[firstNumber]);
+        }
+        return result;
+    }
+
+    private static void gettingElementOne(List<String> result, String phoneNumbers) {
+        String takingNumbers;
+        for (int count = 0; count < phoneNumbers.length(); count++){
+            takingNumbers = String.valueOf(phoneNumbers.charAt(count));
+            result.add(takingNumbers);
+        }
+    }
+
+    private static void gettingElementTwo(String input, String[] phoneNumbers, int firstNumber, List<String> result) {
+        String takingNumbers;
+        int secondNumber;
+        secondNumber = Integer.parseInt(String.valueOf(input.charAt(1)));
+        for (int count = 0; count < phoneNumbers[firstNumber].length(); count++){
+            for (int counter = 0; counter < phoneNumbers[secondNumber].length() ; counter++){
+                takingNumbers = String.valueOf(phoneNumbers[firstNumber].charAt(count) ).
+                        concat(String.valueOf(phoneNumbers[secondNumber].charAt(counter)));
                 result.add(takingNumbers);
             }
         }
-        return result;
     }
 }
