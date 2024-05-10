@@ -1,8 +1,10 @@
 package leetCode;
+import java.util.List;
 
 public class MedianOfTwoSortedArray {
 
     public static int[] mergedArray(int[] firstArray, int[] secondArray) {
+
         int [] arrayLength = new int[firstArray.length + secondArray.length];
         System.arraycopy(firstArray, 0, arrayLength, 0, firstArray.length);
         System.arraycopy(secondArray,0,arrayLength,firstArray.length,secondArray.length);
