@@ -14,5 +14,12 @@ class RemoveElementTest {
         int output = 2;
         assertEquals(output,RemoveElement.removeElement(input,value));
     }
+    @Test
+       public void testTwo() {
+        int[] input = {0,1,2,2,3,0,4,2};
+        int value = 2;
+        int output = 5;
+        assertEquals(output,RemoveElement.removeElement(input,value));
+    }
 
 }
