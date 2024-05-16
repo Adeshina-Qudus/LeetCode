@@ -1,16 +1,15 @@
 package leetCode;
 
-import java.util.ArrayList;
-
 public class RemoveElement {
+
     public static int removeElement(int[] nums, int val) {
-        ArrayList<Integer> result = new ArrayList<>();
+        int counter = 0;
         for (int element : nums) {
             if (element != val) {
-                result.add(element);
+                counter++;
             }
         }
-        return result.size();
+        return counter;
     }
 
 }
