@@ -8,8 +8,8 @@ public class ContainerWithMostWater {
     public static int containerWithMostWater(int[] input) {
         int distance ;
         int []maximumArray = new int[input.length];
-        int result = 0;
-        int maximum = 0;
+        int result;
+        int maximum;
         int minimum ;
         int leftPointer = 0 ;
         int rightPointer = input.length - 1 ;
