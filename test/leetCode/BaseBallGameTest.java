@@ -17,4 +17,12 @@ public class BaseBallGameTest {
         int output = 30;
         assertEquals(output,BaseBallGame.baseBallGame(elements));
     }
+    @Test
+    public void testBaseBallGameTwo() {
+        String [] elements = {"5","-2","4","C","D","9","+","+"};
+        int output = 27;
+        assertEquals(output,BaseBallGame.baseBallGame(elements));
+    }
 }
+
+
